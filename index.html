@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf6f0" />
+  <meta name="description" content="Cream&berry — домашний повар Мила: котлеты, блины, супы, заготовки, торты. По запросу — расчёт КБЖУ. Канал @Mila_borsch." />
+  <title>Cream&berry — домашний повар Мила</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (p.indexOf("/publish/") !== -1) {
+        location.replace(p.replace("/publish/", "/") + location.search + location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top">Cream<span>&berry</span></a>
+    <nav id="site-nav" class="nav" aria-label="Навигация">
+      <a href="#about">О Миле</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Фото</a>
+      <a href="https://t.me/Mila_borsch" target="_blank" rel="noopener">Канал</a>
+      <a href="#order" class="nav-cta">Заказать</a>
+    </nav>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-backdrop" hidden aria-hidden="true"></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" role="presentation"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Домашний повар для вашей семьи</p>
+        <h1>Cream&berry</h1>
+        <p class="hero-lead">
+          Мила готовит так, будто вы только что вернулись в любимую кухню:
+          сочные котлеты, ароматные супы, блины на завтрак и торты, от которых глаза загораются.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#order">Хочу попробовать</a>
+          <a class="btn btn-ghost" href="#menu">Смотреть меню</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>30+</strong> блюд в меню</li>
+          <li><strong>Заготовки</strong> в вакууме</li>
+          <li><strong>Торты</strong> на праздник</li>
+        </ul>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/hero-breakfast.png" alt="Завтрак: блины, тост с авокадо и лососем, кофе" width="500" height="600" />
+      </figure>
+    </section>
+
+    <section class="strip">
+      <p>Не доставка из приложения — <em>настоящая домашняя еда</em>, которую можно разогреть за 10 минут и поставить на стол с гордостью.</p>
+    </section>
+
+    <section class="nutrition" aria-labelledby="nutrition-title">
+      <div class="nutrition-inner">
+        <p class="nutrition-eyebrow">Для тех, кто считает</p>
+        <h2 id="nutrition-title">Вкусно — и по цифрам</h2>
+        <p class="nutrition-text">
+          Слежу за питанием вместе с вами: по запросу рассчитываю <strong>КБЖУ</strong> на каждую порцию —
+          калории, белки, жиры и углеводы. Без «диетической скуки»: те же котлеты, супы и блины,
+          только с понятным планом на день или на неделю.
+        </p>
+        <ul class="nutrition-tags">
+          <li>Калории</li>
+          <li>Белки</li>
+          <li>Жиры</li>
+          <li>Углеводы</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-text">
+        <h2>Привет, я Мила</h2>
+        <p class="lead">
+          Мне нравится кормить людей. Я умею готовить целыми партиями — на неделю вперёд,
+          на праздник или просто чтобы у вас в холодильнике всегда было «как у бабушки, только аккуратнее».
+        </p>
+        <p>
+          Помогу в хозяйстве: приготовлю, упакую в вакуум, подпишу и оставлю в морозилке —
+          вам останется разогреть. Или испеку торт, когда нужен праздник без ночных марафонов у плиты.
+        </p>
+        <p>
+          Если для вас важно <strong>правильное питание</strong>, соберу меню не «на глаз», а с расчётом:
+          калории, белки, жиры и углеводы по порциям — чтобы есть домашнее, вкусное и при этом понимать,
+          что именно попадает в тарелку.
+        </p>
+        <ul class="benefits">
+          <li>
+            <span class="benefit-icon" aria-hidden="true">01</span>
+            <div>
+              <h3>Вкус «как дома»</h3>
+              <p>Без полуфабрикатов и странных добавок — только привычные семейные рецепты.</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon" aria-hidden="true">02</span>
+            <div>
+              <h3>Экономия вашего времени</h3>
+              <p>Один заказ — и ужины на несколько дней готовы. Вы отдыхаете, я у плиты.</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon" aria-hidden="true">03</span>
+            <div>
+              <h3>Упаковка под жизнь</h3>
+              <p>Порции в вакууме: удобно хранить, размораживать и не выбрасывать лишнее.</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon" aria-hidden="true">04</span>
+            <div>
+              <h3>КБЖУ по запросу</h3>
+              <p>Нужен баланс без скуки? Подберу блюда и подпишу калории, БЖУ и вес порции — удобно для семьи и для цели.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <figure class="about-photo">
+        <img src="images/meal-prep.png" alt="Заготовки Милы: сырники, котлеты и супы в вакуумной упаковке" width="560" height="420" />
+        <figcaption>Заготовки на неделю — котлеты, сырники, супы</figcaption>
+      </figure>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="section-head">
+        <h2>Меню</h2>
+        <p>Соберите свой набор или закажите готовый «семейный холодильник» — подскажу, что лучше сочетается. Нужен расчёт КБЖУ — напишите в заказе.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card menu-card--featured">
+          <div class="menu-card-head">
+            <h3>Основные блюда</h3>
+            <span class="tag">хит</span>
+          </div>
+          <ul>
+            <li>Котлеты из курицы</li>
+            <li>Котлеты из говядины</li>
+            <li>Голень индейки запечённая</li>
+            <li>Болоньезе из говядины с овощами</li>
+            <li>Тефтели из говядины с рисом</li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <h3>Блины</h3>
+          <ul>
+            <li>С курицей</li>
+            <li>С говядиной</li>
+            <li>С творогом</li>
+            <li>С яблоком и апельсином</li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <h3>Заготовки и гарниры</h3>
+          <ul>
+            <li>Капуста квашеная</li>
+            <li>Капуста розовая</li>
+            <li>Зажарка овощная</li>
+            <li>Морковные тако с сыром</li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <h3>Выпечка</h3>
+          <ul>
+            <li>Галеты: яблоко + апельсин</li>
+            <li>Галеты: вишня</li>
+            <li>Галеты: малина</li>
+            <li>Сырники сладкие</li>
+            <li>Сырники солёные с пармезаном</li>
+          </ul>
+        </article>
+
+        <article class="menu-card menu-card--wide">
+          <h3>Супы</h3>
+          <p class="menu-note">Свежие и на заготовку — по сезону и вашим предпочтениям. Спросите, что сейчас варю — подберём под вашу семью.</p>
+        </article>
+
+        <article class="menu-card menu-card--accent">
+          <h3>Торты и праздник</h3>
+          <p>Торты на день рождения, медовик, профитроли, праздничная выпечка — обсудим начинку, декор и количество гостей.</p>
+          <a class="link-arrow" href="#order">Заказать торт →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="section-head">
+        <h2>Съедобное портфолио</h2>
+        <p>То, что уже выходило из моей кухни — без фильтров «как в рекламе», только настоящее.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--tall">
+          <img src="images/soup.png" alt="Домашний овощной суп с зеленью и лепёшкой" loading="lazy" />
+          <figcaption>Супы</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/galettes.png" alt="Ягодные галеты на пергаменте" loading="lazy" />
+          <figcaption>Галеты</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/birthday-cake.png" alt="Торт на день рождения с малиной и шоколадом" loading="lazy" />
+          <figcaption>Торты</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/honey-cake.png" alt="Медовик с черникой в подарочной упаковке" loading="lazy" />
+          <figcaption>Медовик</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="images/profiteroles.png" alt="Профитроли — большая партия выпечки" loading="lazy" />
+          <figcaption>Профитроли</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/hero-breakfast.png" alt="Тост с авокадо и семгой, блины и кофе на завтрак" loading="lazy" />
+          <figcaption>С любовью к деталям</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="how section">
+      <h2>Как заказать</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <p>Напишите, сколько человек в семье и что любите есть.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <p>Я предложу набор блюд и сроки — можно миксовать меню.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <p>Готовлю, упаковываю, передаю вам — разогреваете, когда удобно.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="order" class="cta section">
+      <div class="cta-inner">
+        <h2>Освободите вечер — я накормлю</h2>
+        <p>
+          Напишите в канал <a href="https://t.me/Mila_borsch" target="_blank" rel="noopener">@Mila_borsch</a>,
+          что важнее сейчас: заготовки на неделю, блины на завтрак или торт к празднику.
+          Отвечу с идеями и примерной порцией.
+        </p>
+        <div class="cta-buttons">
+          <a class="btn btn-primary btn-lg" href="https://t.me/Mila_borsch" target="_blank" rel="noopener">Канал @Mila_borsch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="mobile-bar" aria-label="Быстрый заказ">
+    <a class="mobile-bar-channel" href="https://t.me/Mila_borsch" target="_blank" rel="noopener">@Mila_borsch</a>
+    <a class="btn btn-primary mobile-bar-btn" href="https://t.me/Mila_borsch" target="_blank" rel="noopener">Заказать</a>
+  </aside>
+
+  <footer class="footer">
+    <p class="footer-brand">Cream&berry · <a href="https://t.me/Mila_borsch" target="_blank" rel="noopener">@Mila_borsch</a></p>
+    <p class="footer-copy">Домашняя еда с заботой · 2026</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
