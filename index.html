@@ -4,17 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#faf6f0" />
-  <meta name="description" content="Cream&berry — домашний повар Мила: котлеты, блины, супы, заготовки, торты. По запросу — расчёт КБЖУ. Канал @Mila_borsch." />
-  <title>Cream&berry — домашний повар Мила</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="Cream&berry — домашняя кухня: котлеты, блины, супы, заготовки, торты. По запросу — расчёт КБЖУ. Канал @Mila_borsch." />
+  <title>Cream&berry — домашняя кухня</title>
   <script>
     (function () {
       var p = location.pathname;
       if (p.indexOf("/publish/") !== -1) {
         location.replace(p.replace("/publish/", "/") + location.search + location.hash);
+        return;
+      }
+      if (location.hostname.endsWith("github.io")) {
+        var m = p.match(/^\/([^/]+)/);
+        if (m) {
+          var base = document.createElement("base");
+          base.href = "/" + m[1] + "/";
+          document.head.appendChild(base);
+        }
       }
     })();
   </script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
@@ -53,7 +62,7 @@
         </ul>
       </div>
       <figure class="hero-photo">
-        <img src="hero-breakfast.png" alt="Завтрак: блины, тост с авокадо и лососем, кофе" width="500" height="600" />
+        <img src="https://eleven-svg.github.io/mila-chief/hero-breakfast.png" alt="Завтрак: блины, тост с авокадо и лососем, кофе" width="500" height="600" />
       </figure>
     </section>
 
@@ -127,7 +136,7 @@
         </ul>
       </div>
       <figure class="about-photo">
-        <img src="meal-prep.png" alt="Заготовки Милы: сырники, котлеты и супы в вакуумной упаковке" width="560" height="420" />
+        <img src="https://eleven-svg.github.io/mila-chief/meal-prep.png" alt="Заготовки Милы: сырники, котлеты и супы в вакуумной упаковке" width="560" height="420" />
         <figcaption>Заготовки на неделю — котлеты, сырники, супы</figcaption>
       </figure>
     </section>
@@ -204,27 +213,27 @@
       </div>
       <div class="gallery-grid">
         <figure class="gallery-item gallery-item--tall">
-          <img src="soup.png" alt="Домашний овощной суп с зеленью и лепёшкой" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/soup.png" alt="Домашний овощной суп с зеленью и лепёшкой" loading="lazy" />
           <figcaption>Супы</figcaption>
         </figure>
         <figure class="gallery-item">
-          <img src="galettes.png" alt="Ягодные галеты на пергаменте" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/galettes.png" alt="Ягодные галеты на пергаменте" loading="lazy" />
           <figcaption>Галеты</figcaption>
         </figure>
         <figure class="gallery-item">
-          <img src="birthday-cake.png" alt="Торт на день рождения с малиной и шоколадом" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/birthday-cake.png" alt="Торт на день рождения с малиной и шоколадом" loading="lazy" />
           <figcaption>Торты</figcaption>
         </figure>
         <figure class="gallery-item">
-          <img src="honey-cake.png" alt="Медовик с черникой в подарочной упаковке" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/honey-cake.png" alt="Медовик с черникой в подарочной упаковке" loading="lazy" />
           <figcaption>Медовик</figcaption>
         </figure>
         <figure class="gallery-item gallery-item--wide">
-          <img src="profiteroles.png" alt="Профитроли — большая партия выпечки" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/profiteroles.png" alt="Профитроли — большая партия выпечки" loading="lazy" />
           <figcaption>Профитроли</figcaption>
         </figure>
         <figure class="gallery-item">
-          <img src="hero-breakfast.png" alt="Тост с авокадо и семгой, блины и кофе на завтрак" loading="lazy" />
+          <img src="https://eleven-svg.github.io/mila-chief/hero-breakfast.png" alt="Тост с авокадо и семгой, блины и кофе на завтрак" loading="lazy" />
           <figcaption>С любовью к деталям</figcaption>
         </figure>
       </div>
@@ -273,6 +282,6 @@
     <p class="footer-copy">Домашняя еда с заботой · 2026</p>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
